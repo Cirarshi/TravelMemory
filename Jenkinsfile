@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'uk-jenkins-test' }
     stages {
         stage('Checkout') {
             steps {
@@ -19,3 +19,4 @@ pipeline {
     }
 
 }
+
